@@ -421,12 +421,8 @@ private:
     }
 
     void copyFrom(const Person& other) {
-        if (other.name != nullptr) {
-            name = new char[strlen(other.name) + 1];
-            strcpy(name, other.name);
-        } else {
-            name = nullptr;
-        }
+        name = new char[strlen(other.name) + 1];
+        strcpy(name, other.name);
         age = other.age;
     }
 };
