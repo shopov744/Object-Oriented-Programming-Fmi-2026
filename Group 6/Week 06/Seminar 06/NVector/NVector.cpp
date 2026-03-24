@@ -88,16 +88,12 @@ void NVector::resize(int newSize)
 
 NVector& NVector::calculate(const NVector& other, const std::function<int(int, int)>& f)
 {
-    int maxSize = max(size, other.size);
-    if (maxSize > size) {
-        resize(maxSize);
-    }
-    for (int i = 0; i < maxSize; i++)
-    {
-        if (i < other.size) {
-            data[i] = f(data[i],other.data[i]);
-        }
-    }
+    if (other.size > size)
+        resize(other.size);
+
+    for (int i = 0; i < other.size; i++)
+        data[i] = f(data[i], other.data[i]);
+
     return *this;
 }
 
