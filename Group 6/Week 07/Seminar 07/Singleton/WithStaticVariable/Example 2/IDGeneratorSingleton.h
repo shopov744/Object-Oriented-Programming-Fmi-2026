@@ -6,11 +6,12 @@ class IDGeneratorSingleton {
 
     IDGeneratorSingleton();
 
+    
+
+public:
     IDGeneratorSingleton(const IDGeneratorSingleton&) = delete;
     IDGeneratorSingleton& operator=(const IDGeneratorSingleton&) = delete;
 
-public:
-    
     static IDGeneratorSingleton& getInstance();
 
     int generate();
