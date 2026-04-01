@@ -14,6 +14,7 @@
 	- Предефинирани следните оператори:
         | Ляв аргумент | Оператор  | Десен аргумент | Резултат     |
         |--------------|-----------|----------------|--------------|
+        | Three        | way       | comparison     | <=>          |
         | Imaginary    | +=        | Imaginary      | Imaginary    |
         | Imaginary    | -=        | Imaginary      | Imaginary    |
         | Imaginary    | *=        | double         | Imaginary    |
